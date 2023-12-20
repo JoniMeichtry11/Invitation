@@ -1,0 +1,13 @@
+<div *ngIf="showPhotos" class="container-component">
+  <div class="d-flex flex-column justify-content-center align-items-center text-container">
+    <p class="fs-1 p-0 m-0">💖</p>
+    <h1>Dylan y Estefania</h1>
+    <p>Nos gustaría compartir con ustedes algunas fotos de la preboda</p>
+  </div>
+  <div class="container-hand">
+    <img src="../../../../assets/img/hand.png" alt="hand" class="hand">
+  </div>
+  <div class="d-flex justify-content-center align-items-center img-container" *ngFor="let photo of photos">
+    <img [src]="photo.src" [alt]="photo.alt" class="img-fluid">
+  </div>
+</div>

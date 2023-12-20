@@ -1,0 +1,39 @@
+.container-component{
+  position: relative;
+  background-color: #f7d6c0;
+  .img-container {
+    padding: 20px;
+    img {
+      border: 5px solid #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+.text-container{
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  margin-bottom: 20vh;
+  padding: 0 20px 0px 20px;
+}
+.container-hand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hand{
+  width: 160px;
+  position: absolute;
+  top: calc(100vh - 230px);
+}
+
+@media only screen and (min-width: 720px) {
+  img {
+    max-width: 720px;
+  }
+}
